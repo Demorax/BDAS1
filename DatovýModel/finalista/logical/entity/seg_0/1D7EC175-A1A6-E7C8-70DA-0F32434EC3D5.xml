@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D7EC175-A1A6-E7C8-70DA-0F32434EC3D5" name="Doklad">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:12:25 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_doklad" id="2B404467-9DBB-6954-A389-C4F4B7A0CE1C">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:12:30 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datumVydani" id="DAF45EF2-A0CA-F393-702E-D6DBAE1A11AA">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:12:48 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datumPlatneDo" id="A21C363D-0AB6-4A5D-EDD2-AE1850D0F550">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:13:02 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mistoVydani" id="FDF23982-FD76-F697-5B03-0252D2AB2A96">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:13:22 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cisloPrukazu" id="E2600030-5C53-B4F6-605C-73FF54AA67A0">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:13:37 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_osoba" id="A7D4C453-6658-D53F-ADFD-3355E1CC4300">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 15:15:41 UTC</createdTime>
+<generatorID>1EF6C51C-D53E-6578-20B6-99FBFA3373EF</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<referedAttribute>E923211D-C263-FE31-39F8-61B46C687C88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B512F7F6-E771-028A-99FA-E7ECDE83A401" name="Doklad PK">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:12:35 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2B404467-9DBB-6954-A389-C4F4B7A0CE1C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

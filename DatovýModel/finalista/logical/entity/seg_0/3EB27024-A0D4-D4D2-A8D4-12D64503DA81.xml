@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3EB27024-A0D4-D4D2-A8D4-12D64503DA81" name="Student">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:58:19 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>06C86420-D79F-5B86-CCDB-6A11F5251A66</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_student" id="C10008AA-ED5C-7256-7090-FB7AD7F1547B">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:59:01 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datumNastupu" id="E9303D79-C065-6620-F6FB-862C64724905">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:59:19 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rocnik" id="B84C4B77-0911-6F04-97F0-7FA4526F2C6C">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:59:32 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oborStudia" id="DFB73802-366C-C831-DE39-64BE75F5ACB6">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:00:07 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typstudia" id="A2ED8F31-4A0D-711F-5C4B-700CF09658F3">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:01:02 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_skola" id="64A827D2-BA08-C2E2-87B4-1AF69C651A98">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 15:18:21 UTC</createdTime>
+<generatorID>C7896F0B-5DE0-738D-0667-BC6A2039A49A</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<referedAttribute>FA486FAD-CA2B-C887-ADB0-71B63D9D7858</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD8CE9B5-947E-1522-8289-9C14F4F20286" name="Student PK">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:59:12 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C10008AA-ED5C-7256-7090-FB7AD7F1547B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

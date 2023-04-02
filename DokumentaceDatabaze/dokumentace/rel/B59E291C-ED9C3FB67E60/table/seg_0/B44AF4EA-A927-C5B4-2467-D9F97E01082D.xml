@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B44AF4EA-A927-C5B4-2467-D9F97E01082D" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="LEKAR_MAIN">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>LEKAR_MAIN</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4ED27732-632B-508B-10C0-C8FF6C3C10AE">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>LEKAR_MAIN</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP" id="63EC22F6-5AC1-844A-3498-CE5ABD17542B">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>LEKAR_MAIN</sourceObjSchema>
+<sourceObjName>TYP</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESICNEPROPLACENO" id="88FFE13C-70BE-D713-AA0B-93007C013213">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>LEKAR_MAIN</sourceObjSchema>
+<sourceObjName>MESICNEPROPLACENO</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESA_MAIN_ID_ADRESA" id="1BCCA4CA-473F-82B6-883B-D442460FC9FA">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>LEKAR_MAIN</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN_ID_ADRESA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95938025-8528-FE59-5114-D2099C351DF0" referredColumn="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2809AAD6-9AF4-EF3E-6EA9-508B11EEFB25" name="LEKAR_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>LEKAR_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ED27732-632B-508B-10C0-C8FF6C3C10AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="222327D1-6424-DFFE-3A25-6ED19A744829" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="LEKAR_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>LEKAR_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ED27732-632B-508B-10C0-C8FF6C3C10AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A495C3A-A6D5-64DC-670E-CCE57C861869" name="LEKAR_MAIN_ADRESA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BCCA4CA-473F-82B6-883B-D442460FC9FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

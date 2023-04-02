@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ZAMESTNANI" directorySegmentName="seg_0" id="4004165F-12B8-C5C9-D19D-A92A8247CBDC">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A3A0775-3C24-9721-00B8-FD2FBC5990A9</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAZEV" id="13502BD1-60F7-2A98-8FEC-24288331C325">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONNIKONTAKT" id="4E5C9AFA-FC39-F5BA-B4FE-8EC0F19768C0">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADRESA_MAIN_ID_ADRESA" id="65117155-1D2C-95E0-F768-E5B1F13AE29B">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POZNAMKA" id="86527200-FC99-82D5-76F0-814695AA8DC1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ZAMESTNANI" id="DB852E26-E1A2-F368-55B5-F51702B73CB0">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ZAMESTNANI_PK" id="798F6CD2-3055-FB02-CA11-1E1884A7FF61">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ZAMESTNANI_ADRESA_MAIN_FK" id="7675C9D2-B9FD-7271-9BEB-91AC2D816C99">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ZAMESTNANI_PK" id="42525378-E9B1-067E-638B-06B9E965A29A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>798F6CD2-3055-FB02-CA11-1E1884A7FF61</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

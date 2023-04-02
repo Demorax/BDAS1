@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4004165F-12B8-C5C9-D19D-A92A8247CBDC" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAMESTNANI">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ZAMESTNANI" id="DB852E26-E1A2-F368-55B5-F51702B73CB0">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANI</sourceObjSchema>
+<sourceObjName>ID_ZAMESTNANI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZEV" id="13502BD1-60F7-2A98-8FEC-24288331C325">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANI</sourceObjSchema>
+<sourceObjName>NAZEV</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONNIKONTAKT" id="4E5C9AFA-FC39-F5BA-B4FE-8EC0F19768C0">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANI</sourceObjSchema>
+<sourceObjName>TELEFONNIKONTAKT</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POZNAMKA" id="86527200-FC99-82D5-76F0-814695AA8DC1">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANI</sourceObjSchema>
+<sourceObjName>POZNAMKA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESA_MAIN_ID_ADRESA" id="65117155-1D2C-95E0-F768-E5B1F13AE29B">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANI</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN_ID_ADRESA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AA8413F-37A9-E210-11AB-70065570A362" referredColumn="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42525378-E9B1-067E-638B-06B9E965A29A" name="ZAMESTNANI_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANI_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB852E26-E1A2-F368-55B5-F51702B73CB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="798F6CD2-3055-FB02-CA11-1E1884A7FF61" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAMESTNANI_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANI_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB852E26-E1A2-F368-55B5-F51702B73CB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7675C9D2-B9FD-7271-9BEB-91AC2D816C99" name="ZAMESTNANI_ADRESA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65117155-1D2C-95E0-F768-E5B1F13AE29B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

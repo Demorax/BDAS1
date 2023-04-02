@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A71C75C9-8FE7-E5C5-8C2F-1141DD476C22" containerWithKeyObject="C104B68B-0D33-03C0-45B7-F120CFA7D227" localFKIndex="FD15813A-64F8-A987-6A09-368ED97166F4" name="ZAMESTNANEC_ZAMESTNANI_FK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_ZAMESTNANI_FK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<referredTableLongName>ST67059.ZAMESTNANI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4004165F-12B8-C5C9-D19D-A92A8247CBDC</referredTableID>
+<keyObject>42525378-E9B1-067E-638B-06B9E965A29A</keyObject>
+<referredKeyID>42525378-E9B1-067E-638B-06B9E965A29A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ZAMESTNANI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

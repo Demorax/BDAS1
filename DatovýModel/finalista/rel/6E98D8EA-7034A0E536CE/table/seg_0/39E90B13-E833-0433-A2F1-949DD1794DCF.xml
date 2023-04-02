@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39E90B13-E833-0433-A2F1-949DD1794DCF" name="Zamestnani">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>564EBB3E-9E82-513C-2C8B-4AA811B4F494</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zamestnani" id="79EB2EAE-804D-80BD-437E-D89C2552BF2A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>E4020AF0-5A4D-ED99-92A8-6758605ADE44</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="CD819654-457C-99FE-E2B3-FBDBD1471F64">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>DE251FA7-05E8-5F12-52AC-B7BD41F03B72</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefonniKontakt" id="39E3F229-1F97-3ED7-A6A5-DC2C559E1551">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>C672686D-C2A1-8B68-3A35-0F8E6EBD7CFA</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poznamka" id="81B0BC84-28FD-F404-6CFD-2DE48361BE87">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>5A7E1405-7A2A-FF36-F2AB-B109B3DF6CB6</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa_main_id_adresa" id="CB4D5335-C7C9-3183-ED0A-2C82EF3FD7B7">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>F260F4DE-C03A-243E-9927-A3660C1BD4AE</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA4E2BFD-E8CB-1BB4-82C8-012E728BF627" referredColumn="A59C7351-AE03-E57C-EF4E-1C0D5A3357E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34D298C7-B9D8-88D2-E351-E60B969A9379" name="Zamestnani_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>A0419BBE-8207-449E-9546-1AF5D5D01C74</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79EB2EAE-804D-80BD-437E-D89C2552BF2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26538F7E-E1AD-7E7A-5910-1C630D226680" name="Zamestnani_Adresa_main_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>3429935B-B5BD-250D-D280-0F682F69AC37</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB4D5335-C7C9-3183-ED0A-2C82EF3FD7B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

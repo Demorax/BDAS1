@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F38AF83D-87FE-461E-415E-8177A57BF372" containerWithKeyObject="E4BD35CC-DCCE-2546-8DE7-C81F8BA14DCA" localFKIndex="3064585F-A3C9-5E38-A0FE-3548EEFF540B" name="OBCANSKY_PRUKAZ_DOKLAD_FK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OBCANSKY_PRUKAZ_DOKLAD_FK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<referredTableLongName>ST67059.DOKLAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B347C09-7E6E-5985-908E-A54C51EE5253</referredTableID>
+<keyObject>570D72B9-59C8-0B95-BE0D-84FFB0D14818</keyObject>
+<referredKeyID>570D72B9-59C8-0B95-BE0D-84FFB0D14818</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DOKLAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

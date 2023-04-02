@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F309E454-890B-A022-F7DE-96F105DA33FC" name="Karta_pojistence">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>7F193AC9-50B7-60CC-556F-7EC27592C7E5</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_doklad" id="BE74F822-7A50-4AA4-A6AE-D7F6122B447A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>2B404467-9DBB-6954-A389-C4F4B7A0CE1C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A84396E5-E02A-5E91-83FB-32494A65B419" referredColumn="0EB058AB-C52D-1E23-C2DA-BF981F6D042F"/>
+</associations>
+</Column>
+<Column name="cisloPojistence" id="E9477735-6531-6435-DA49-3296BE458391">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>255D332A-B69C-799E-524A-E75D9194614C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFAC719C-CBDF-12CF-C24E-F31F127959FD" name="Karta_pojistence_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B512F7F6-E771-028A-99FA-E7ECDE83A401</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE74F822-7A50-4AA4-A6AE-D7F6122B447A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B16F958A-E2AB-E334-D172-CF6CA9D2668F" name="Karta_pojistence_PKv1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>3122CDD0-5C79-5212-685F-30CEE2471CFD</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE74F822-7A50-4AA4-A6AE-D7F6122B447A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B16E3782-4192-3827-0D86-0A23AEDD532C" name="Karta_pojistence_Doklad_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>7B8BF4D7-F9F5-4D66-C69F-01F832F4E08C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE74F822-7A50-4AA4-A6AE-D7F6122B447A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

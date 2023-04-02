@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="CF8776D0-62F5-4A93-1AA2-ECFC9AF64818">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:38:14 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<sourcePk>D2FC8E98-1BF4-7D65-5597-F833F0477D42</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>je obávána</nameOnSource>
+<nameOnTarget>pracuje na</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8FDF0115-6D30-6379-5A75-37DF22C0B898</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>117EC73B-E828-1C86-CB3C-F0505C5A1320</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="307BE804-5C26-38C9-2E62-EB2A7E8414B9" containerWithKeyObject="9A270874-F396-89FB-B1A2-0506B3F0CA01" localFKIndex="0D7FC8F8-FDAF-2D95-EE6F-D6DD06F501FB" name="KARTA_POJISTENCE_DOKLAD_FK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>KARTA_POJISTENCE_DOKLAD_FK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<referredTableLongName>ST67059.DOKLAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B347C09-7E6E-5985-908E-A54C51EE5253</referredTableID>
+<keyObject>570D72B9-59C8-0B95-BE0D-84FFB0D14818</keyObject>
+<referredKeyID>570D72B9-59C8-0B95-BE0D-84FFB0D14818</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DOKLAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

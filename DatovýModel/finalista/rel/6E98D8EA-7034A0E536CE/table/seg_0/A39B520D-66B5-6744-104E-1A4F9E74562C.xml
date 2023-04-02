@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A39B520D-66B5-6744-104E-1A4F9E74562C" name="Adresa_main">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>8FDF0115-6D30-6379-5A75-37DF22C0B898</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_adresa" id="A59C7351-AE03-E57C-EF4E-1C0D5A3357E1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>1B2C964A-5A1D-C6CD-A9BA-C3A68C05A007</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ulice" id="AFE464D6-045A-4D8E-CAA0-2DD25F055935">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>5DDEEF42-FA99-153A-989E-D97E8A261308</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cisloPopisne" id="2D83EE5E-0677-8473-8B44-D7C78D29E66A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B98A155F-BCDE-1437-3424-183C03C1BFA8</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="psc" id="F8878864-E89E-4550-E11C-76F80F8760EE">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>C02DF17F-96F2-6C57-6869-84716ABFE71C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obec" id="1EC6A3FF-CD27-BD90-B410-600655E35F54">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>DF6355FC-7003-D2E2-4E4B-0B9F5E0FB0A0</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kraj" id="60159EEF-72BA-80E7-EDD5-2ACE4AA38B58">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>1A19DE6B-DC17-71DE-7F60-038DCB6D0D3D</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stat" id="D9BD1ED4-1B12-64DC-9675-D72EDB9EAF0D">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>D7B62761-6A84-E37B-619E-9DAEC3306C90</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19AB64D7-5DA2-8DE7-842A-2154CACC4CA2" name="Adresa_main_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>D2FC8E98-1BF4-7D65-5597-F833F0477D42</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A59C7351-AE03-E57C-EF4E-1C0D5A3357E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

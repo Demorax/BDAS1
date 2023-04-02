@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="KARTA_POJISTENCE" directorySegmentName="seg_0" id="9A270874-F396-89FB-B1A2-0506B3F0CA01">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A3A0775-3C24-9721-00B8-FD2FBC5990A9</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_DOKLAD" id="0EBF6E3F-7F5E-D519-D50A-AAC765A7D652">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CISLOPOJISTENCE" id="BA1FD79B-93E6-F6E2-50BE-934D3EAAF0F2">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="KARTA_POJISTENCE_PK" id="70BDE3AF-D6AC-9D95-C1B6-E9131DCC207D">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="KARTA_POJISTENCE_DOKLAD_FK" id="0D7FC8F8-FDAF-2D95-EE6F-D6DD06F501FB">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="KARTA_POJISTENCE_PK" id="E9CFC644-EA14-07BB-3752-A014232AEA80">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>70BDE3AF-D6AC-9D95-C1B6-E9131DCC207D</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

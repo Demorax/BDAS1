@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SKOLA" directorySegmentName="seg_0" id="6972E093-2C39-D156-FB01-195D235A1099">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A3A0775-3C24-9721-00B8-FD2FBC5990A9</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_SKOLA" id="2AAF34A1-64E4-6685-A8F8-347BE51EA53E">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZEV" id="46593B4F-B4E7-F548-D520-9DF64C3A0911">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADRESA_MAIN_ID_ADRESA" id="57CA21BA-EFA0-DF20-AF7F-CFB84282A718">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SKOLA_PK" id="8AD2903F-E02D-1384-F653-16970978841A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SKOLA_ADRESA_MAIN_FK" id="2984EFD7-A6DC-59BD-A5F5-8124F5C0C215">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SKOLA_PK" id="75942DAE-6597-97E0-7E6E-5640D92154C0">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>8AD2903F-E02D-1384-F653-16970978841A</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

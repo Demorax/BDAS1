@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EF45503-FBDF-296F-1531-7F465306E781" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="RELACEOSOBALEKAR">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>RELACEOSOBALEKAR</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OSOBA_MAIN_ID_OSOBA" id="0DB751BD-9D4E-F1ED-FE3F-F57F28C75B71">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>RELACEOSOBALEKAR</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF691879-9C82-9118-FFCF-2FA2297131F0" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+<Column name="LEKAR_MAIN_ID" id="61ACDF9C-4369-7A0C-FF24-CA17C436C1B0">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>RELACEOSOBALEKAR</sourceObjSchema>
+<sourceObjName>LEKAR_MAIN_ID</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0575F8E-53D6-DDFD-C414-63674150D373" referredColumn="4ED27732-632B-508B-10C0-C8FF6C3C10AE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE6B21EE-DC7E-73D7-90E6-7DCBB3B1A7B1" name="RELATION_12_LEKAR_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61ACDF9C-4369-7A0C-FF24-CA17C436C1B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F8399DC-40A4-BD1C-6854-C87A62243179" name="RELATION_12_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DB751BD-9D4E-F1ED-FE3F-F57F28C75B71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

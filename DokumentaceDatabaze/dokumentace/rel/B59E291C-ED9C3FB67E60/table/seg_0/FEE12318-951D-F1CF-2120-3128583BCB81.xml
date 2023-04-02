@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEE12318-951D-F1CF-2120-3128583BCB81" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="STUDENT">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OSOBA" id="8F6F3F42-CD0F-F986-DCC6-263523140441">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FA07E9A-7FAE-E885-E979-EC1DCE6E040C" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+<Column name="ID_STUDENT" id="AA868795-7E93-17DB-E4FC-F7683B78D6F5">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ID_STUDENT</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMNASTUPU" id="02905CDF-B8E6-69F3-2439-50F784F900C8">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>DATUMNASTUPU</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROCNIK" id="90A35050-32EA-53F1-20EB-18E04E5418C6">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ROCNIK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBORSTUDIA" id="0AFBE6FE-2461-F687-FA0E-A29A050DC50A">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>OBORSTUDIA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPSTUDIA" id="7573E9EF-051B-CF89-98B6-921C7060FCF8">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>TYPSTUDIA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKOLA_ID_SKOLA" id="A3A45BE4-8C8A-6A71-08B4-7C33508D5BE7">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SKOLA_ID_SKOLA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="006953C3-33D4-7A43-3AEF-39E87DD4B0C6" referredColumn="2AAF34A1-64E4-6685-A8F8-347BE51EA53E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E52C6A18-0BE1-A096-1279-8A5F24E26CA6" name="STUDENT_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F6F3F42-CD0F-F986-DCC6-263523140441"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55D33CBD-DCC5-745C-3443-2621FD101C55" name="STUDENT_PKV1">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT_PKV1</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA868795-7E93-17DB-E4FC-F7683B78D6F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EB15FEF-25A5-A951-6F65-D2C2395BEABB" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="STUDENT_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F6F3F42-CD0F-F986-DCC6-263523140441"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="244C7EAF-E2F3-B323-04C0-A3381CB6C869" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="STUDENT_PKV1">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT_PKV1</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA868795-7E93-17DB-E4FC-F7683B78D6F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EFA44CD-1612-E262-EFE4-9DB8D829FC2D" name="STUDENT_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F6F3F42-CD0F-F986-DCC6-263523140441"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8D0E4EC-D6F9-7022-54F6-0C593694FCBA" name="STUDENT_SKOLA_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3A45BE4-8C8A-6A71-08B4-7C33508D5BE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

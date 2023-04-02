@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ZAMESTNANEC" directorySegmentName="seg_0" id="C104B68B-0D33-03C0-45B7-F120CFA7D227">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A3A0775-3C24-9721-00B8-FD2FBC5990A9</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATUMNASTUPU" id="672B2A3E-BA01-D2F7-273A-6EA49382D76B">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ZAMESTNANEC" id="6AF2F6E7-586E-7D53-9B5C-412549FD2795">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ODDELENI" id="76719BCB-320C-85B0-56DA-DF1F778975E4">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_OSOBA" id="9AB1EB6B-7D39-B0AF-4FCC-FAC4EC089B03">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SMLOUVANANEURCITO" id="C0667EB0-9F72-C516-9A33-5CFA6E33DD43">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ZAMESTNANI_ID_ZAMESTNANI" id="C935120A-BFA3-DA47-9B5E-EEF6FA7F5FF5">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POCETHODINTYDNE" id="E305A0EE-1236-41C0-0E6F-02C30AAD631F">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ZAMESTNANEC_PK" id="847C66ED-6693-5230-F110-018EE1141B9F">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ZAMESTNANEC_PKV1" id="881A35E0-13AF-53D8-54A1-99F8FF75D43D">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ZAMESTNANEC_OSOBA_MAIN_FK" id="08550588-AD65-0B9C-2294-419592A441A9">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ZAMESTNANEC_ZAMESTNANI_FK" id="FD15813A-64F8-A987-6A09-368ED97166F4">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ZAMESTNANEC_PK" id="BF932116-734B-1E64-B454-71982F52B4FA">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>847C66ED-6693-5230-F110-018EE1141B9F</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="ZAMESTNANEC_PKV1" id="E9FB014D-1D93-BAD9-4507-9DC15BA3F2EB">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>881A35E0-13AF-53D8-54A1-99F8FF75D43D</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

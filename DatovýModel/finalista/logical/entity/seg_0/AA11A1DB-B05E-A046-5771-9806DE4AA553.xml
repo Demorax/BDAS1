@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AA11A1DB-B05E-A046-5771-9806DE4AA553" name="Skola">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:07:34 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_skola" id="FA486FAD-CA2B-C887-ADB0-71B63D9D7858">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:07:40 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="92FDBCBD-B875-EA36-B7B8-557621AF5229">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:07:54 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_adresa" id="ED21BA8F-5B6D-369B-6ABE-6B962EE23B2D">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 15:18:01 UTC</createdTime>
+<generatorID>9A172559-E475-DF49-ACF4-59CEF68B2EC9</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<referedAttribute>1B2C964A-5A1D-C6CD-A9BA-C3A68C05A007</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="058D3357-5DAB-9FE5-445B-E2D5FEE76712" name="Skola PK">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:10:27 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA486FAD-CA2B-C887-ADB0-71B63D9D7858</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

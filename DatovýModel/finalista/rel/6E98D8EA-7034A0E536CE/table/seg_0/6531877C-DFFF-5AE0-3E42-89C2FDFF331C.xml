@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6531877C-DFFF-5AE0-3E42-89C2FDFF331C" name="Ridicsky_prukaz">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B8AEAD64-7202-65A6-D457-4CF5F5B46F46</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_doklad" id="9D65C10F-6AC1-0D6C-D8A2-78B85A635497">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>2B404467-9DBB-6954-A389-C4F4B7A0CE1C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A12A3DEB-64F3-A86D-D34B-4F38D7BBD412" referredColumn="0EB058AB-C52D-1E23-C2DA-BF981F6D042F"/>
+</associations>
+</Column>
+<Column name="ridicskeOpravneni" id="4C1EA235-A31B-42A2-4A19-0546C8E73677">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>F8C60939-7572-4D4A-3906-D171A70A9F79</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="557C05C4-8DEA-9092-9735-AB7A454E6542" name="Ridicsky_prukaz_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B512F7F6-E771-028A-99FA-E7ECDE83A401</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D65C10F-6AC1-0D6C-D8A2-78B85A635497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC72DAA8-2079-AF1F-242B-6C17DF5ACA5F" name="Ridicsky_prukaz_PKv1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>5E2E0B79-2251-EF81-10D8-1B804987B5AC</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D65C10F-6AC1-0D6C-D8A2-78B85A635497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="200ED812-F651-8DA0-C130-11468A70397F" name="Ridicsky_prukaz_Doklad_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>282D2E2D-AF4F-194A-C351-7AC54B6797B2</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D65C10F-6AC1-0D6C-D8A2-78B85A635497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B347C09-7E6E-5985-908E-A54C51EE5253" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="DOKLAD">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>DOKLAD</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DOKLAD" id="5E6CA459-5462-B909-E687-E5D26EC01A46">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>ID_DOKLAD</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMVYDANI" id="D8E5DD2E-E133-CF9A-F197-3CFC4F77D3F6">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>DATUMVYDANI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMPLATNEDO" id="DCDD2081-59C4-24C8-532A-8F1B7892C8E7">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>DATUMPLATNEDO</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MISTOVYDANI" id="5D145B37-77AB-F0E8-16AF-627B914F73A2">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>MISTOVYDANI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CISLOPRUKAZU" id="E494B2DA-4CF9-A6B0-E4B1-C0F0F6A7E09E">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>CISLOPRUKAZU</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OSOBA_MAIN_ID_OSOBA" id="EAA6C0C1-7A84-A43A-EF54-F6CE4076A103">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>DOKLAD</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFB19193-1CB1-5720-12E9-301A84E63FEF" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="570D72B9-59C8-0B95-BE0D-84FFB0D14818" name="DOKLAD_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>DOKLAD_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E6CA459-5462-B909-E687-E5D26EC01A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8A9741C-D1D8-8EAA-FD69-0ADA4ACBA3AD" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="DOKLAD_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>DOKLAD_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E6CA459-5462-B909-E687-E5D26EC01A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28718B6F-A96B-CCE2-C8A6-C2E7338B0EF1" name="DOKLAD_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA6C0C1-7A84-A43A-EF54-F6CE4076A103"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,255 @@
+CREATE TABLE adresa_main (
+    id_adresa    NUMBER NOT NULL,
+    ulice        VARCHAR2(255) NOT NULL,
+    cislopopisne NUMBER NOT NULL,
+    psc          VARCHAR2(255) NOT NULL,
+    obec         VARCHAR2(255) NOT NULL,
+    kraj         VARCHAR2(255) NOT NULL,
+    stat         VARCHAR2(255) NOT NULL
+);
+
+ALTER TABLE adresa_main ADD CONSTRAINT adresa_main_pk PRIMARY KEY ( id_adresa );
+
+CREATE TABLE doklad (
+    id_doklad           NUMBER NOT NULL,
+    datumvydani         DATE NOT NULL,
+    datumplatnedo       DATE NOT NULL,
+    mistovydani         VARCHAR2(255) NOT NULL,
+    cisloprukazu        VARCHAR2(255) NOT NULL,
+    osoba_main_id_osoba NUMBER NOT NULL
+);
+
+ALTER TABLE doklad ADD CONSTRAINT doklad_pk PRIMARY KEY ( id_doklad );
+
+CREATE TABLE karta_pojistence (
+    id_doklad       NUMBER NOT NULL,
+    cislopojistence VARCHAR2(255) NOT NULL
+);
+
+ALTER TABLE karta_pojistence ADD CONSTRAINT karta_pojistence_pk PRIMARY KEY ( id_doklad );
+
+ALTER TABLE karta_pojistence ADD CONSTRAINT karta_pojistence_pkv1 UNIQUE ( id_doklad );
+
+CREATE TABLE lekar_main (
+    id                    NUMBER NOT NULL,
+    typ                   VARCHAR2(50) NOT NULL,
+    mesicneproplaceno     NUMBER NOT NULL,
+    adresa_main_id_adresa NUMBER NOT NULL
+);
+
+ALTER TABLE lekar_main ADD CONSTRAINT lekar_main_pk PRIMARY KEY ( id );
+
+CREATE TABLE obcansky_prukaz (
+    id_doklad NUMBER NOT NULL
+);
+
+ALTER TABLE obcansky_prukaz ADD CONSTRAINT obcansky_prukaz_pk PRIMARY KEY ( id_doklad );
+
+ALTER TABLE obcansky_prukaz ADD CONSTRAINT obcansky_prukaz_pkv1 UNIQUE ( id_doklad );
+
+CREATE TABLE osoba_main (
+    id_osoba              NUMBER NOT NULL,
+    jmeno                 VARCHAR2(64) NOT NULL,
+    prijmeni              VARCHAR2(64) NOT NULL,
+    telefon               VARCHAR2(20) NOT NULL,
+    email                 VARCHAR2(255) NOT NULL,
+    pohlavi               VARCHAR2(255) NOT NULL,
+    datumnarozeni         DATE NOT NULL,
+    datumumrti            DATE,
+    postizeny             CHAR(1) NOT NULL,
+    adresa_main_id_adresa NUMBER NOT NULL
+);
+
+ALTER TABLE osoba_main ADD CONSTRAINT osoba_main_pk PRIMARY KEY ( id_osoba );
+
+CREATE TABLE platba (
+    id_platby             NUMBER NOT NULL,
+    mesicneposilanopenez  NUMBER NOT NULL,
+    mesicnynakladyzaosobu NUMBER NOT NULL,
+    mesicneplacenoosobou  NUMBER NOT NULL,
+    osoba_main_id_osoba   NUMBER NOT NULL,
+     Check (mesicneposilanopenez >= 0),
+    Check (mesicnynakladyzaosobu >= 0),
+    Check (mesicneplacenoosobou >= 0)
+);
+
+ALTER TABLE platba ADD CONSTRAINT platba_pk PRIMARY KEY ( id_platby );
+
+CREATE TABLE relaceosobalekar (
+    osoba_main_id_osoba NUMBER NOT NULL,
+    lekar_main_id       NUMBER NOT NULL
+);
+
+ALTER TABLE relaceosobalekar ADD CONSTRAINT relation_12_pk PRIMARY KEY ( osoba_main_id_osoba,
+                                                                         lekar_main_id );
+
+CREATE TABLE ridicsky_prukaz (
+    id_doklad         NUMBER NOT NULL,
+    ridicskeopravneni VARCHAR2(255) NOT NULL
+);
+
+ALTER TABLE ridicsky_prukaz ADD CONSTRAINT ridicsky_prukaz_pk PRIMARY KEY ( id_doklad );
+
+ALTER TABLE ridicsky_prukaz ADD CONSTRAINT ridicsky_prukaz_pkv1 UNIQUE ( id_doklad );
+
+CREATE TABLE skola (
+    id_skola              NUMBER NOT NULL,
+    nazev                 VARCHAR2(255) NOT NULL,
+    adresa_main_id_adresa NUMBER NOT NULL
+);
+
+ALTER TABLE skola ADD CONSTRAINT skola_pk PRIMARY KEY ( id_skola );
+
+CREATE TABLE student (
+    id_osoba       NUMBER NOT NULL,
+    id_student     NUMBER NOT NULL,
+    datumnastupu   DATE NOT NULL,
+    rocnik         NUMBER NOT NULL,
+    oborstudia     VARCHAR2(255) NOT NULL,
+    typstudia      VARCHAR2(255),
+    skola_id_skola NUMBER NOT NULL
+);
+
+ALTER TABLE student ADD CONSTRAINT student_pk PRIMARY KEY ( id_osoba );
+
+ALTER TABLE student ADD CONSTRAINT student_pkv1 UNIQUE ( id_student );
+
+CREATE TABLE zamestnanec (
+    id_osoba                 NUMBER NOT NULL,
+    id_zamestnanec           NUMBER NOT NULL,
+    datumnastupu             DATE NOT NULL,
+    pocethodintydne          NUMBER NOT NULL,
+    smlouvananeurcito        CHAR(1) NOT NULL,
+    oddeleni                 VARCHAR2(255) NOT NULL,
+    zamestnani_id_zamestnani NUMBER NOT NULL,
+    Check (pocethodintydne <= 100)
+);
+
+ALTER TABLE zamestnanec ADD CONSTRAINT zamestnanec_pk PRIMARY KEY ( id_osoba );
+
+ALTER TABLE zamestnanec ADD CONSTRAINT zamestnanec_pkv1 UNIQUE ( id_zamestnanec );
+
+CREATE TABLE zamestnani (
+    id_zamestnani         NUMBER NOT NULL,
+    nazev                 VARCHAR2(60) NOT NULL,
+    telefonnikontakt      VARCHAR2(255) NOT NULL,
+    poznamka              VARCHAR2(255),
+    adresa_main_id_adresa NUMBER NOT NULL
+);
+
+ALTER TABLE zamestnani ADD CONSTRAINT zamestnani_pk PRIMARY KEY ( id_zamestnani );
+
+CREATE TABLE zapis (
+    id                  NUMBER NOT NULL,
+    datumzmeny          DATE NOT NULL,
+    platnedo            DATE NOT NULL,
+    popiszmeny          VARCHAR2(255) NOT NULL,
+    osoba_main_id_osoba NUMBER NOT NULL
+);
+
+ALTER TABLE zapis ADD CONSTRAINT zapis_pk PRIMARY KEY ( id );
+
+ALTER TABLE doklad
+    ADD CONSTRAINT doklad_osoba_main_fk FOREIGN KEY ( osoba_main_id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+ALTER TABLE karta_pojistence
+    ADD CONSTRAINT karta_pojistence_doklad_fk FOREIGN KEY ( id_doklad )
+        REFERENCES doklad ( id_doklad );
+
+ALTER TABLE lekar_main
+    ADD CONSTRAINT lekar_main_adresa_main_fk FOREIGN KEY ( adresa_main_id_adresa )
+        REFERENCES adresa_main ( id_adresa );
+
+ALTER TABLE obcansky_prukaz
+    ADD CONSTRAINT obcansky_prukaz_doklad_fk FOREIGN KEY ( id_doklad )
+        REFERENCES doklad ( id_doklad );
+
+ALTER TABLE osoba_main
+    ADD CONSTRAINT osoba_main_adresa_main_fk FOREIGN KEY ( adresa_main_id_adresa )
+        REFERENCES adresa_main ( id_adresa );
+
+ALTER TABLE platba
+    ADD CONSTRAINT platba_osoba_main_fk FOREIGN KEY ( osoba_main_id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+ALTER TABLE relaceosobalekar
+    ADD CONSTRAINT relation_12_lekar_main_fk FOREIGN KEY ( lekar_main_id )
+        REFERENCES lekar_main ( id );
+
+ALTER TABLE relaceosobalekar
+    ADD CONSTRAINT relation_12_osoba_main_fk FOREIGN KEY ( osoba_main_id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+ALTER TABLE ridicsky_prukaz
+    ADD CONSTRAINT ridicsky_prukaz_doklad_fk FOREIGN KEY ( id_doklad )
+        REFERENCES doklad ( id_doklad );
+
+ALTER TABLE skola
+    ADD CONSTRAINT skola_adresa_main_fk FOREIGN KEY ( adresa_main_id_adresa )
+        REFERENCES adresa_main ( id_adresa );
+
+ALTER TABLE student
+    ADD CONSTRAINT student_osoba_main_fk FOREIGN KEY ( id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+ALTER TABLE student
+    ADD CONSTRAINT student_skola_fk FOREIGN KEY ( skola_id_skola )
+        REFERENCES skola ( id_skola );
+
+ALTER TABLE zamestnanec
+    ADD CONSTRAINT zamestnanec_osoba_main_fk FOREIGN KEY ( id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+ALTER TABLE zamestnanec
+    ADD CONSTRAINT zamestnanec_zamestnani_fk FOREIGN KEY ( zamestnani_id_zamestnani )
+        REFERENCES zamestnani ( id_zamestnani );
+
+ALTER TABLE zamestnani
+    ADD CONSTRAINT zamestnani_adresa_main_fk FOREIGN KEY ( adresa_main_id_adresa )
+        REFERENCES adresa_main ( id_adresa );
+
+ALTER TABLE zapis
+    ADD CONSTRAINT zapis_osoba_main_fk FOREIGN KEY ( osoba_main_id_osoba )
+        REFERENCES osoba_main ( id_osoba );
+
+
+
+CREATE SEQUENCE SEQUENCE1 INCREMENT BY 1 START WITH 1 MAXVALUE 100 MINVALUE 0;
+CREATE SEQUENCE Lekar_SEQUENCE INCREMENT BY 1 START WITH 1 MAXVALUE 100 MINVALUE 0;
+
+
+create or replace TRIGGER RELACEOSOBALEKAR_trigger
+AFTER INSERT ON RELACEOSOBALEKAR 
+REFERENCING OLD AS OLD NEW AS NEW 
+BEGIN
+  delete from RELACEOSOBALEKAR where RELACEOSOBALEKAR.osoba_main_id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END;
+
+create or replace TRIGGER Platba_trigger 
+AFTER INSERT ON Platba 
+REFERENCING OLD AS OLD NEW AS NEW 
+BEGIN
+  delete from Platba where Platba.osoba_main_id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END;
+
+create or replace TRIGGER Doklad_trigger 
+AFTER INSERT ON Doklad 
+REFERENCING OLD AS OLD NEW AS NEW 
+BEGIN
+  delete from Doklad where Doklad.osoba_main_id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END;
+
+create or replace TRIGGER Zamestnanec_trigger 
+AFTER INSERT ON Zamestnanec
+REFERENCING OLD AS OLD NEW AS NEW 
+BEGIN
+  delete from Zamestnanec where Zamestnanec.id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END;
+
+create or replace TRIGGER Student_trigger 
+AFTER INSERT ON Student
+REFERENCING OLD AS OLD NEW AS NEW 
+BEGIN
+  delete from Student where Student.id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END; 

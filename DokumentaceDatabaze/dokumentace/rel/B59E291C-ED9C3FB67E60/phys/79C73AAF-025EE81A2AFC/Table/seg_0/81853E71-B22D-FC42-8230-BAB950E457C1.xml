@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ADRESA_MAIN" directorySegmentName="seg_0" id="81853E71-B22D-FC42-8230-BAB950E457C1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A3A0775-3C24-9721-00B8-FD2FBC5990A9</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PSC" id="19A80679-5974-CA42-DE79-FD8ED1D954C5">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CISLOPOPISNE" id="4FEA2A5C-79E9-0970-C148-8888FF2B5046">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KRAJ" id="6021266A-487A-F48E-16BC-77ACCD6D9EC8">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STAT" id="7A92C323-B4CD-731F-3E65-07D30B879BCB">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBEC" id="B34D0673-77FB-B3D6-2E25-50D429B1AA42">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ULICE" id="E672C402-8583-CCAA-4E0B-F7DEA713EDDB">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ADRESA" id="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ADRESA_MAIN_PK" id="EBA49E21-5850-2397-9F8B-7524F2078243">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<schemaObject>C366BFA0-358E-F2BA-4AEE-68A189D6EB68</schemaObject>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ADRESA_MAIN_PK" id="E7E5FDF8-B6C6-F09A-BF24-B4B3A48D373F">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<segment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</segment>
+<tableSpace>60A57569-D4DB-047F-2A66-F17D7D873CF8</tableSpace>
+<existingIndex>EBA49E21-5850-2397-9F8B-7524F2078243</existingIndex>
+<indexSegment>E6070CA7-F1D2-4C42-9DF7-85479B3971F0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

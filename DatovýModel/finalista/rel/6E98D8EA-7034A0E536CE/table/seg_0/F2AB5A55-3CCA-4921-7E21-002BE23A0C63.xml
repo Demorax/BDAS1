@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2AB5A55-3CCA-4921-7E21-002BE23A0C63" name="Obcansky_prukaz">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>C98C5F83-5736-39A0-CFA4-81FAD408C837</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_doklad" id="8F085A7C-C3C1-39E9-F95D-3D0AE90FE8BE">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>2B404467-9DBB-6954-A389-C4F4B7A0CE1C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF7A5B74-9D11-E7F2-53AA-BC8AB0636221" referredColumn="0EB058AB-C52D-1E23-C2DA-BF981F6D042F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7512E19D-E50C-DAEE-1084-ECD5ACD11F2B" name="Obcansky_prukaz_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B512F7F6-E771-028A-99FA-E7ECDE83A401</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F085A7C-C3C1-39E9-F95D-3D0AE90FE8BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72FD06FE-1CA6-586F-3BE5-5C3C9E7147DC" name="Obcansky_prukaz_PKv1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>CFE6527A-05AF-8152-0A0C-C5DF3172F731</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<deprecated>true</deprecated>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F085A7C-C3C1-39E9-F95D-3D0AE90FE8BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11C0501A-52F7-CC31-D3DC-57CFBF1D2BA9" name="Obcansky_prukaz_Doklad_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>14363F6C-5A8F-36A2-3439-9A2FBC243AE6</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F085A7C-C3C1-39E9-F95D-3D0AE90FE8BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

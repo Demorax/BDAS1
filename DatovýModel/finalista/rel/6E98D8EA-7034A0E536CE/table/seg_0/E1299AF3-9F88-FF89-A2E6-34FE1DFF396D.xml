@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1299AF3-9F88-FF89-A2E6-34FE1DFF396D" name="Zamestnanec">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>828F71C2-7E1B-79AB-AC64-520D11B40A6B</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_osoba" id="520E0C63-F48A-60B6-9AA0-7A7143EF2987">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>E923211D-C263-FE31-39F8-61B46C687C88</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8705587D-1844-FFB3-68C7-E663333B964D" referredColumn="5F6A0E03-682F-9636-53E0-A0EB4C05E9D7"/>
+</associations>
+</Column>
+<Column name="id_zamestnanec" id="EE7B7BBF-E7E0-B700-7D4E-D65D92C8527D">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>1AC4C386-BFE6-F189-D851-BF98D6AFEF48</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datumNastupu" id="50B6D3CC-7ABF-2BC0-8705-48E354D4F5C0">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>1E40A013-D991-34D2-3D89-56DDD7305FB0</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pocetHodinTydne" id="A037B9C0-3365-0230-E6A3-6BCD4900E598">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B29C2B5D-161F-3326-571A-8352DF0F65CE</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="smlouvaNaNeurcito" id="6D2D697F-68B4-7029-3954-89111731C709">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B0BDD155-406B-5F90-9CC0-04AD2DF04743</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oddeleni" id="F9168B70-95A4-84B3-E2FB-0A8001A42F1A">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>038261BD-249A-CF16-1343-3D8EFCF8EC08</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zamestnani_id_zamestnani" id="5D7DB94D-230C-CAAF-509B-C1FB6A3ABBAF">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>17CC1676-8FDA-7862-EE7F-DC67FB57E0BF</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F1120F6-D886-740F-E635-F2427BDA4364" referredColumn="79EB2EAE-804D-80BD-437E-D89C2552BF2A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="368768C1-0467-D0D9-01DC-145EF4E1679F" name="Zamestnanec_PK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>B6C14515-3717-B6F6-7F30-A931D620086C</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="520E0C63-F48A-60B6-9AA0-7A7143EF2987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41FD7709-2149-D5B4-D075-7451AD4AE3EC" name="Zamestnanec_PKv1">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>E4D75AC4-ADD4-9467-23DC-BAE1145F636B</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE7B7BBF-E7E0-B700-7D4E-D65D92C8527D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82CAD3B1-1940-E71E-F79D-3108596DE993" name="Zamestnanec_Osoba_main_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>F983E518-AC4F-F032-5C0B-FB0DB3965834</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="520E0C63-F48A-60B6-9AA0-7A7143EF2987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62D2D9F6-43C4-F7DD-A842-DE73F005263E" name="Zamestnanec_Zamestnani_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 17:08:37 UTC</createdTime>
+<generatorID>867F1CAA-9876-1E1E-F430-6541436BB077</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D7DB94D-230C-CAAF-509B-C1FB6A3ABBAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

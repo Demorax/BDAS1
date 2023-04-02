@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9DACA26-BFD5-C35C-8DA2-6D0448CBF599" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAPIS">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAPIS</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="72C3A0E9-9B4A-25D0-CE66-F43AC1A8C420">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAPIS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMZMENY" id="989F6B96-D4A9-C05D-110A-1A79AD8639AE">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAPIS</sourceObjSchema>
+<sourceObjName>DATUMZMENY</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLATNEDO" id="BCED6AC5-55C3-9FAB-3B4B-10CC1866D318">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAPIS</sourceObjSchema>
+<sourceObjName>PLATNEDO</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POPISZMENY" id="E90A8A9E-91C3-EC01-9DAE-07BF55EEC234">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAPIS</sourceObjSchema>
+<sourceObjName>POPISZMENY</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OSOBA_MAIN_ID_OSOBA" id="E738D3E3-300F-82CC-810A-BD92FCF28880">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAPIS</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="026FD5B1-B790-BD36-9EB7-74EB986EFD25" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBA21F9F-F807-3671-4B77-00ABD97B1D01" name="ZAPIS_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAPIS_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72C3A0E9-9B4A-25D0-CE66-F43AC1A8C420"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D78D2FF-54E2-774D-B4B5-1B46CECC6F7D" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAPIS_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAPIS_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72C3A0E9-9B4A-25D0-CE66-F43AC1A8C420"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D40304CA-5C81-CFC2-B091-6CB2DB1EE268" name="ZAPIS_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E738D3E3-300F-82CC-810A-BD92FCF28880"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="828F71C2-7E1B-79AB-AC64-520D11B40A6B" name="Zamestnanec">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:04:12 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>06C86420-D79F-5B86-CCDB-6A11F5251A66</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zamestnanec" id="1AC4C386-BFE6-F189-D851-BF98D6AFEF48">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:04:20 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datumNastupu" id="1E40A013-D991-34D2-3D89-56DDD7305FB0">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:05:45 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pocetHodinTydne" id="B29C2B5D-161F-3326-571A-8352DF0F65CE">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:06:15 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="smlouvaNaNeurcito" id="B0BDD155-406B-5F90-9CC0-04AD2DF04743">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:06:35 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oddeleni" id="038261BD-249A-CF16-1343-3D8EFCF8EC08">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:07:01 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zamestnani" id="17CC1676-8FDA-7862-EE7F-DC67FB57E0BF">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 15:18:34 UTC</createdTime>
+<generatorID>867F1CAA-9876-1E1E-F430-6541436BB077</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<referedAttribute>E4020AF0-5A4D-ED99-92A8-6758605ADE44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E4D75AC4-ADD4-9467-23DC-BAE1145F636B" name="Zamestnanec PK">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:04:44 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AC4C386-BFE6-F189-D851-BF98D6AFEF48</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

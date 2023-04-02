@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="finalista" id="68EC175E-6F56-5BFB-9C78-6EA842CABFA1" version="3.5">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 07:36:58 UTC</createdTime>
+<ownerDesignName>sem</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>68EC175E-6F56-5BFB-9C78-6EA842CABFA1</designId>
+</OSDM_Design>

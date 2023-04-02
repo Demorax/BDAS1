@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4BD35CC-DCCE-2546-8DE7-C81F8BA14DCA" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="OBCANSKY_PRUKAZ">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OBCANSKY_PRUKAZ</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DOKLAD" id="69879A01-8F27-FA01-8A2D-CC7645CCBB2B">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OBCANSKY_PRUKAZ</sourceObjSchema>
+<sourceObjName>ID_DOKLAD</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F38AF83D-87FE-461E-415E-8177A57BF372" referredColumn="5E6CA459-5462-B909-E687-E5D26EC01A46"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2257C19F-3D85-2897-CB50-34FA49A685C8" name="OBCANSKY_PRUKAZ_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OBCANSKY_PRUKAZ_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69879A01-8F27-FA01-8A2D-CC7645CCBB2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3271B98-C2BB-0E6E-CC16-8AD72195C1CB" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="OBCANSKY_PRUKAZ_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OBCANSKY_PRUKAZ_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69879A01-8F27-FA01-8A2D-CC7645CCBB2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3064585F-A3C9-5E38-A0FE-3548EEFF540B" name="OBCANSKY_PRUKAZ_DOKLAD_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69879A01-8F27-FA01-8A2D-CC7645CCBB2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

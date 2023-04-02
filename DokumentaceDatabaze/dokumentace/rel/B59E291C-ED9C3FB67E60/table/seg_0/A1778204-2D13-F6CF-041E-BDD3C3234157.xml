@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1778204-2D13-F6CF-041E-BDD3C3234157" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="PLATBA">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>PLATBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLATBY" id="C3A5F70E-1A0F-C796-9ED5-51DC05B2D08E">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>PLATBA</sourceObjSchema>
+<sourceObjName>ID_PLATBY</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESICNEPOSILANOPENEZ" id="90F53A58-E34D-DCE9-88FB-0C30906F3F01">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>PLATBA</sourceObjSchema>
+<sourceObjName>MESICNEPOSILANOPENEZ</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<constraintName>SYS_C00464419</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="mesicneposilanopenez &gt;= 0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="mesicneposilanopenez &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESICNYNAKLADYZAOSOBU" id="88C7B4CB-E05E-8D90-0724-DD4C0EEF9E90">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>PLATBA</sourceObjSchema>
+<sourceObjName>MESICNYNAKLADYZAOSOBU</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<constraintName>SYS_C00464420</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="mesicnynakladyzaosobu &gt;= 0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="mesicnynakladyzaosobu &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESICNEPLACENOOSOBOU" id="E18D992B-190E-DFAD-B0EE-381559D29F0D">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>PLATBA</sourceObjSchema>
+<sourceObjName>MESICNEPLACENOOSOBOU</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<constraintName>SYS_C00464421</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="mesicneplacenoosobou &gt;= 0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="mesicneplacenoosobou &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OSOBA_MAIN_ID_OSOBA" id="9E99E5F9-2C7D-9611-2200-CE8D5F90FC38">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>PLATBA</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B93A5B27-6EBF-8182-0103-C0324FB003D0" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5682E169-5B61-D0D2-E962-125E277E9495" name="PLATBA_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>PLATBA_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3A5F70E-1A0F-C796-9ED5-51DC05B2D08E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DFF8232-5695-3505-E02D-9150EA86640A" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="PLATBA_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>PLATBA_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3A5F70E-1A0F-C796-9ED5-51DC05B2D08E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDA8479F-2EC0-F339-AA41-F8AFDDFF035D" name="PLATBA_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E99E5F9-2C7D-9611-2200-CE8D5F90FC38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

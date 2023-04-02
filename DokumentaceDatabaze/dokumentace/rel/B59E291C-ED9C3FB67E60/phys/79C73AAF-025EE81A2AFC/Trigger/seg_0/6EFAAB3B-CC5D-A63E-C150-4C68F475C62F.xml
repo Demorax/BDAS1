@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="ZAMESTNANEC_TRIGGER" directorySegmentName="seg_0" id="6EFAAB3B-CC5D-A63E-C150-4C68F475C62F">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_TRIGGER</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  delete from Zamestnanec where Zamestnanec.id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>2CDE571A-8AE2-4BDA-F62B-CA7E3E160287</owner>
+<scope>FOR EACH STATEMENT</scope>
+<table>C104B68B-0D33-03C0-45B7-F120CFA7D227</table>
+</TriggerOraclev10g>

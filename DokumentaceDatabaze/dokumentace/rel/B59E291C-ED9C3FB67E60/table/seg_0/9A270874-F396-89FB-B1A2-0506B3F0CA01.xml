@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A270874-F396-89FB-B1A2-0506B3F0CA01" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="KARTA_POJISTENCE">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>KARTA_POJISTENCE</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DOKLAD" id="0EBF6E3F-7F5E-D519-D50A-AAC765A7D652">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>KARTA_POJISTENCE</sourceObjSchema>
+<sourceObjName>ID_DOKLAD</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="307BE804-5C26-38C9-2E62-EB2A7E8414B9" referredColumn="5E6CA459-5462-B909-E687-E5D26EC01A46"/>
+</associations>
+</Column>
+<Column name="CISLOPOJISTENCE" id="BA1FD79B-93E6-F6E2-50BE-934D3EAAF0F2">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>KARTA_POJISTENCE</sourceObjSchema>
+<sourceObjName>CISLOPOJISTENCE</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9CFC644-EA14-07BB-3752-A014232AEA80" name="KARTA_POJISTENCE_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>KARTA_POJISTENCE_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EBF6E3F-7F5E-D519-D50A-AAC765A7D652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70BDE3AF-D6AC-9D95-C1B6-E9131DCC207D" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="KARTA_POJISTENCE_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>KARTA_POJISTENCE_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EBF6E3F-7F5E-D519-D50A-AAC765A7D652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D7FC8F8-FDAF-2D95-EE6F-D6DD06F501FB" name="KARTA_POJISTENCE_DOKLAD_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EBF6E3F-7F5E-D519-D50A-AAC765A7D652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

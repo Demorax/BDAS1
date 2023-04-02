@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C104B68B-0D33-03C0-45B7-F120CFA7D227" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAMESTNANEC">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OSOBA" id="9AB1EB6B-7D39-B0AF-4FCC-FAC4EC089B03">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2804A226-2F8A-6769-D4FB-D5B64C60CB27" referredColumn="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</associations>
+</Column>
+<Column name="ID_ZAMESTNANEC" id="6AF2F6E7-586E-7D53-9B5C-412549FD2795">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>ID_ZAMESTNANEC</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMNASTUPU" id="672B2A3E-BA01-D2F7-273A-6EA49382D76B">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>DATUMNASTUPU</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POCETHODINTYDNE" id="E305A0EE-1236-41C0-0E6F-02C30AAD631F">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>POCETHODINTYDNE</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<constraintName>SYS_C00464447</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pocethodintydne &lt;= 100"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="pocethodintydne &lt;= 100"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SMLOUVANANEURCITO" id="C0667EB0-9F72-C516-9A33-5CFA6E33DD43">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>SMLOUVANANEURCITO</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ODDELENI" id="76719BCB-320C-85B0-56DA-DF1F778975E4">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>ODDELENI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZAMESTNANI_ID_ZAMESTNANI" id="C935120A-BFA3-DA47-9B5E-EEF6FA7F5FF5">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ZAMESTNANEC</sourceObjSchema>
+<sourceObjName>ZAMESTNANI_ID_ZAMESTNANI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A71C75C9-8FE7-E5C5-8C2F-1141DD476C22" referredColumn="DB852E26-E1A2-F368-55B5-F51702B73CB0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF932116-734B-1E64-B454-71982F52B4FA" name="ZAMESTNANEC_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB1EB6B-7D39-B0AF-4FCC-FAC4EC089B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9FB014D-1D93-BAD9-4507-9DC15BA3F2EB" name="ZAMESTNANEC_PKV1">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_PKV1</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AF2F6E7-586E-7D53-9B5C-412549FD2795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="847C66ED-6693-5230-F110-018EE1141B9F" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAMESTNANEC_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB1EB6B-7D39-B0AF-4FCC-FAC4EC089B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="881A35E0-13AF-53D8-54A1-99F8FF75D43D" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ZAMESTNANEC_PKV1">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ZAMESTNANEC_PKV1</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AF2F6E7-586E-7D53-9B5C-412549FD2795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08550588-AD65-0B9C-2294-419592A441A9" name="ZAMESTNANEC_OSOBA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB1EB6B-7D39-B0AF-4FCC-FAC4EC089B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD15813A-64F8-A987-6A09-368ED97166F4" name="ZAMESTNANEC_ZAMESTNANI_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C935120A-BFA3-DA47-9B5E-EEF6FA7F5FF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

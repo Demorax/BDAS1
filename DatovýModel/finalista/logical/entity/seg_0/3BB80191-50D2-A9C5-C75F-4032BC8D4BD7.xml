@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3BB80191-50D2-A9C5-C75F-4032BC8D4BD7" name="Platba">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:40:05 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_platby" id="AD38BA0E-BAB6-7D12-6433-6981A9A74D1D">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:40:13 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mesicnePosilanoPenez" id="84550503-CA54-BA62-F37D-55F719C7698B">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:40:32 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mesicnyNakladyZaOsobu" id="529B92B4-06C3-19F2-DBFC-CF1BB6B9CA5D">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:42:31 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mesicnePlacenoOsobou" id="4BA1AC0B-E9D5-6506-847F-5B3B302BA400">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:42:51 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_osoba" id="7B7F1224-C2AA-B6E7-19AD-ECC3B2830E26">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 15:15:41 UTC</createdTime>
+<generatorID>5AE053B4-E4C4-F8E6-7ADC-0658BD202A47</generatorID>
+<ownerDesignName>finalista</ownerDesignName>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="true"/>
+</engineerTo>
+<referedAttribute>E923211D-C263-FE31-39F8-61B46C687C88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C0CE58B9-A253-8EEF-646F-C1F4C91DDAD0" name="Platby PK">
+<createdBy>tomaskvapil</createdBy>
+<createdTime>2022-11-28 08:40:25 UTC</createdTime>
+<ownerDesignName>finalista</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FCDBE512-EF8E-ED79-05C1-A5E4832CBDF3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD38BA0E-BAB6-7D12-6433-6981A9A74D1D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

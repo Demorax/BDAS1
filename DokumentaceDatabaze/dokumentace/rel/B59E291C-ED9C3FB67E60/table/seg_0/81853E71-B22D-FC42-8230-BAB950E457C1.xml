@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81853E71-B22D-FC42-8230-BAB950E457C1" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ADRESA_MAIN">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ADRESA" id="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>ID_ADRESA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ULICE" id="E672C402-8583-CCAA-4E0B-F7DEA713EDDB">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>ULICE</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CISLOPOPISNE" id="4FEA2A5C-79E9-0970-C148-8888FF2B5046">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>CISLOPOPISNE</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PSC" id="19A80679-5974-CA42-DE79-FD8ED1D954C5">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>PSC</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBEC" id="B34D0673-77FB-B3D6-2E25-50D429B1AA42">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>OBEC</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KRAJ" id="6021266A-487A-F48E-16BC-77ACCD6D9EC8">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>KRAJ</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STAT" id="7A92C323-B4CD-731F-3E65-07D30B879BCB">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ADRESA_MAIN</sourceObjSchema>
+<sourceObjName>STAT</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7E5FDF8-B6C6-F09A-BF24-B4B3A48D373F" name="ADRESA_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBA49E21-5850-2397-9F8B-7524F2078243" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="ADRESA_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

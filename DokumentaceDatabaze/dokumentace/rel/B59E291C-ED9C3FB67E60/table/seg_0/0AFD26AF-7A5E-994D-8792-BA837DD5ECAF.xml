@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0AFD26AF-7A5E-994D-8792-BA837DD5ECAF" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="OSOBA_MAIN">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OSOBA" id="9A94115C-4BED-95EE-83FB-86D7D4CB99C8">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>ID_OSOBA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JMENO" id="216B04C8-DC79-915F-49EC-E6D4B879B700">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>JMENO</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIJMENI" id="EA6D587E-9B77-6D7B-EF76-A5B3AA220A1E">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>PRIJMENI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="13B0081C-C53A-3929-FD57-03D58B95F01C">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>TELEFON</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="727A18E1-9D54-4838-6293-CC463CF12EAD">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POHLAVI" id="7ADCAED7-3506-93E8-0214-E90A91ED9E0E">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>POHLAVI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMNAROZENI" id="BB250703-9AE6-146B-2E4A-04884958D245">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>DATUMNAROZENI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATUMUMRTI" id="3C627796-6680-47EB-2DB6-B83E4C91B05E">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>DATUMUMRTI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTIZENY" id="72BF8990-EA5B-1750-2188-492F29CF6E38">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>POSTIZENY</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESA_MAIN_ID_ADRESA" id="AB728570-1405-D104-3392-4922824B7D0C">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>OSOBA_MAIN</sourceObjSchema>
+<sourceObjName>ADRESA_MAIN_ID_ADRESA</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2398E492-6999-DEE6-74C4-55C3F2EE7183" referredColumn="EC8699B2-C64F-1809-AAD7-6F00EC0E7DAF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83D76A3C-CC07-ADB4-D564-529F8F4B427F" name="OSOBA_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5542CCDD-A2EB-91E3-24CD-22F1674F42BE" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="OSOBA_MAIN_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>OSOBA_MAIN_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A94115C-4BED-95EE-83FB-86D7D4CB99C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD72C46D-7197-63DB-F6F8-2803A410CFD2" name="OSOBA_MAIN_ADRESA_MAIN_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB728570-1405-D104-3392-4922824B7D0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

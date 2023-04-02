@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="STUDENT_TRIGGER" directorySegmentName="seg_0" id="0E43E25C-0F1B-007F-F247-E079F0335066">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>STUDENT_TRIGGER</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  delete from Student where Student.id_osoba = (select o.id_osoba from osoba_main o where o.datumumrti IS NOT NULL);
+END; ]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>2CDE571A-8AE2-4BDA-F62B-CA7E3E160287</owner>
+<scope>FOR EACH STATEMENT</scope>
+<table>FEE12318-951D-F1CF-2120-3128583BCB81</table>
+</TriggerOraclev10g>

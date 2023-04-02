@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8E0FBEA-84B5-C180-EB73-351ED90C1C65" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="RIDICSKY_PRUKAZ">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>RIDICSKY_PRUKAZ</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DOKLAD" id="64B6F0D9-2444-5A20-AFED-A9C30CD00375">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>RIDICSKY_PRUKAZ</sourceObjSchema>
+<sourceObjName>ID_DOKLAD</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62330747-A82B-E17A-6EFA-247C27F219BC" referredColumn="5E6CA459-5462-B909-E687-E5D26EC01A46"/>
+</associations>
+</Column>
+<Column name="RIDICSKEOPRAVNENI" id="2EEE1FBE-B7AC-A64E-CC4A-339B94F6163C">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>RIDICSKY_PRUKAZ</sourceObjSchema>
+<sourceObjName>RIDICSKEOPRAVNENI</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:21 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF22880F-0982-A6FC-6113-F4268FB44145" name="RIDICSKY_PRUKAZ_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>RIDICSKY_PRUKAZ_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:23 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B6F0D9-2444-5A20-AFED-A9C30CD00375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F48CA19-46BD-6C36-D8D1-7522DFC06FF8" schemaObject="C366BFA0-358E-F2BA-4AEE-68A189D6EB68" name="RIDICSKY_PRUKAZ_PK">
+<sourceConnName>Databaze</sourceConnName>
+<sourceObjSchema>ST67059</sourceObjSchema>
+<sourceObjName>RIDICSKY_PRUKAZ_PK</sourceObjName>
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:22 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B6F0D9-2444-5A20-AFED-A9C30CD00375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6069ED09-46F6-63DE-0FDE-53BED3F141FD" name="RIDICSKY_PRUKAZ_DOKLAD_FK">
+<createdBy>tomas</createdBy>
+<createdTime>2022-12-09 22:04:25 UTC</createdTime>
+<ownerDesignName>dokumentace</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B6F0D9-2444-5A20-AFED-A9C30CD00375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
